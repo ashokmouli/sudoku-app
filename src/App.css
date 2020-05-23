@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
 }
 
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,18 +17,118 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+*/
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #446383;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #9cdcfe;
 }
 
+.subgrid-row {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  border: 10px;
+  text-align: center;
+  width: 531px;
+}
+
+.subgrid-col {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  border: 10px;
+
+}
+table.s-table {
+  border: 2px solid black; 
+  border-collapse: collapse;
+  background-color: #e6e6e6;
+}
+
+td.s-table-data {
+  border: 1px solid grey; 
+}
+
+.s-input {
+  border-style: none;
+  outline: none;
+  display: block;
+  width:55px;
+  height:55px;
+  line-height: 55px;
+  font-size: 2em;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.s-input:hover {
+  cursor: pointer;
+}
+
+.s-input:focus {
+  background-color: gold; 
+  /* The following three rules are needed to get rid of a blinking cursor. */
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #1e90ff;
+ }
+
+.read-only {
+  color: black;
+}
+
+.s-button-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 25px; 
+  width: 531px;
+
+}
+
+/*
+.s-button {
+  width: 100px;
+  height: 40px; 
+  margin-left: 15px;
+  font-size: 2em;
+  background-color: #d3d3d3;
+  color: darkblue;
+  font-weight: bold;
+}
+*/
+
+.square_btn {
+  width: 100px;
+  height: 30px; 
+  margin-left: 15px;
+  font-size: 1.5em; 
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*button color*/
+  border-bottom: solid 2px #d27d00;/*daker color*/
+  border-radius: 4px;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+
+.square_btn:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+/*
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +141,4 @@
     transform: rotate(360deg);
   }
 }
+*/
